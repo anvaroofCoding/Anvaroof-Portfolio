@@ -1,0 +1,61 @@
+import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import Button from '../../components/buttons/button'
+import LanguageSelector from '../../components/buttons/langSwitch'
+
+const Navbar = () => {
+	const [open, setOpen] = useState(false)
+
+	return (
+		<div>
+			{/* Desktop version */}
+			<div className='font-roboto container h-[80px] lg:flex hidden justify-end  gap-[50px] items-center'>
+				<ul className='font-dmSans flex items-center gap-[15px]'>
+					<li className='font-[400] text-[16px] cursor-pointer'>About us</li>
+					<a href='#soft-skills' className='duration-400'>
+						<li className='font-[400] text-[16px] cursor-pointer'>
+							Soft Skills
+						</li>
+					</a>
+					<a href='#konikma'>
+						<li className='font-[400] text-[16px] cursor-pointer'>
+							Ko'nikmalar
+						</li>
+					</a>
+					<li className='font-[400] text-[16px] cursor-pointer'>Contact</li>
+					<li className='font-[400] text-[16px] cursor-pointer'>
+						<LanguageSelector />
+					</li>
+				</ul>
+				<Button />
+			</div>
+			{/* Mobile and Planshet version */}
+			<div className='container px-4 py-2 font-roboto lg:hidden block'>
+				<div className='flex justify-between items-center h-[80px]'>
+					<button onClick={() => setOpen(!open)} className='text-2xl'>
+						☰
+					</button>
+				</div>
+
+				{/* Mobile menu toggle */}
+				{open && (
+					<motion.ul
+						initial={{ opacity: 0, y: -20 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: -20 }}
+						transition={{ duration: 0.5, ease: 'easeInOut' }}
+						className='flex flex-col gap-4 mt-2 font-dmSans lg:hidden'
+					>
+						<li>About us</li>
+						<li>Careers</li>
+						<li>Resources</li>
+						<li>Login</li>
+						<LanguageSelector />
+					</motion.ul>
+				)}
+			</div>
+		</div>
+	)
+}
+
+export default Navbar
