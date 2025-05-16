@@ -5,7 +5,7 @@ const Footer = () => {
 	const { t, i18n } = useTranslation()
 	return (
 		<div className='text-center py-7 bg-gray-200 rounded-t-4xl font-dmSans'>
-			<h1>{t('huquq')}</h1>
+			<h1 className='text-[10px]'>{t('huquq')}</h1>
 		</div>
 	)
 }

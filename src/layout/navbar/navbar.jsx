@@ -12,7 +12,7 @@ const Navbar = () => {
 		<div>
 			{/* Desktop version */}
 			<div className='font-roboto container h-[80px] lg:flex hidden justify-end  gap-[50px] items-center'>
-				<ul className='font-dmSans flex items-center gap-[15px]'>
+				<ul className='font-dmSans flex items-center gap-[30px]'>
 					<a href='#intizom'>
 						<li className='font-[400] text-[16px] cursor-pointer'>
 							{t('iztizomli')}
