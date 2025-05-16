@@ -59,10 +59,18 @@ const Navbar = () => {
 						transition={{ duration: 0.5, ease: 'easeInOut' }}
 						className='flex flex-col gap-4 mt-2 font-dmSans lg:hidden'
 					>
-						<li>{t('iztizomli')}</li>
-						<li>{t('shaxsiy_k')}</li>
-						<li>{t('konikma')}</li>
-						<li>{t('cont')}</li>
+						<a href='#inzitom'>
+							<li>{t('iztizomli')}</li>
+						</a>
+						<a href='#soft-skills'>
+							<li>{t('shaxsiy_k')}</li>
+						</a>
+						<a href='#konikma'>
+							<li>{t('konikma')}</li>
+						</a>
+						<a href='#contact'>
+							<li>{t('cont')}</li>
+						</a>
 						<LanguageSelector />
 					</motion.ul>
 				)}
