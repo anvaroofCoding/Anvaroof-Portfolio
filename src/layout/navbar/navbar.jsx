@@ -59,7 +59,7 @@ const Navbar = () => {
 						transition={{ duration: 0.5, ease: 'easeInOut' }}
 						className='flex flex-col gap-4 mt-2 font-dmSans lg:hidden'
 					>
-						<a href='#inzitom'>
+						<a href='#intizom'>
 							<li>{t('iztizomli')}</li>
 						</a>
 						<a href='#soft-skills'>
