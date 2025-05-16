@@ -31,7 +31,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'> {t('section_disc2')}</span>
+								<span className='font-bold'> {t('section_disc2')} </span>
 								{t('section_disc2_2')}
 							</p>
 						</li>
@@ -40,7 +40,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'>{t('section_disc3')}</span>
+								<span className='font-bold'>{t('section_disc3')} </span>
 								{t('section_disc3_3')}
 							</p>
 						</li>
@@ -49,7 +49,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'>{t('section_disc4')}: </span>
+								<span className='font-bold'>{t('section_disc4')} </span>
 								{t('section_disc4_4')}
 							</p>
 						</li>
@@ -94,7 +94,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold '>{t('sec_2')}: </span>
+								<span className='font-bold '> {t('sec_2')}: </span>
 								{t('sec_3')}
 							</p>
 						</li>
@@ -112,7 +112,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'>{t('sec_6')}: </span>
+								<span className='font-bold'> {t('sec_6')}: </span>
 								{t('sec_7')}
 							</p>
 						</li>
@@ -121,7 +121,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'>{t('sec_8')}: </span>
+								<span className='font-bold'> {t('sec_8')}: </span>
 								{t('sec_9')}
 							</p>
 						</li>
@@ -130,7 +130,7 @@ const Section = () => {
 								<SquareCheckBig />
 							</div>
 							<p className='lg:text-[20px] text-[15px]'>
-								<span className='font-bold'>{t('sec_10')}: </span>
+								<span className='font-bold'> {t('sec_10')}: </span>
 								{t('sec_11')}
 							</p>
 						</li>
