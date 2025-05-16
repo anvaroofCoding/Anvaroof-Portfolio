@@ -4,6 +4,6 @@ import { TextGenerateEffect } from '../ui/text-generate-effect'
 export function TextGenerateEffectDemo() {
 	const { t, i18n } = useTranslation()
 
-	const words = t('me_disc')
+	const words = t('welcome')
 	return <TextGenerateEffect words={words} />
 }

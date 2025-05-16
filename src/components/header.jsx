@@ -49,12 +49,15 @@ const Header = () => {
 				<h1 className='flex flex-col text-center xl:text-[96px]/[100px] md:text-[60px] text-[30px] font-[400]'>
 					<span>{t('hi')}</span>
 					<span>{t('welcome')}!</span>
+					{/* <TextGenerateEffectDemo/ */}
 				</h1>
 
 				<p className='xl:w-[608px] font-dmSans xl:text-5 md:text-[20px] text-[10px] font-[400] text-center'>
 					{t('header_disc')}
 				</p>
-				<GetButton />
+				<a href='#about'>
+					<GetButton />
+				</a>
 			</div>
 		</div>
 	)

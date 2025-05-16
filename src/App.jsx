@@ -2,6 +2,8 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Outlet } from 'react-router-dom'
 import AboutMe from './components/AboutMe'
+import Card from './components/card'
+import Contact from './components/contact'
 import Section from './components/section'
 import Shior from './components/shior'
 import './lang/i18n'
@@ -22,6 +24,8 @@ const App = () => {
 				<Shior />
 				<Section />
 				<AboutMe />
+				<Card />
+				<Contact />
 			</Layout>
 		</div>
 	)

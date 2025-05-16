@@ -1,33 +1,44 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Button from '../../components/buttons/button'
 import LanguageSelector from '../../components/buttons/langSwitch'
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false)
+	const { t, i18n } = useTranslation()
 
 	return (
 		<div>
 			{/* Desktop version */}
 			<div className='font-roboto container h-[80px] lg:flex hidden justify-end  gap-[50px] items-center'>
 				<ul className='font-dmSans flex items-center gap-[15px]'>
-					<li className='font-[400] text-[16px] cursor-pointer'>About us</li>
+					<a href='#intizom'>
+						<li className='font-[400] text-[16px] cursor-pointer'>
+							{t('iztizomli')}
+						</li>
+					</a>
 					<a href='#soft-skills' className='duration-400'>
 						<li className='font-[400] text-[16px] cursor-pointer'>
-							Soft Skills
+							{t('shaxsiy_k')}
 						</li>
 					</a>
 					<a href='#konikma'>
 						<li className='font-[400] text-[16px] cursor-pointer'>
-							Ko'nikmalar
+							{t('konikma')}
 						</li>
 					</a>
-					<li className='font-[400] text-[16px] cursor-pointer'>Contact</li>
+					<li className='font-[400] text-[16px] cursor-pointer'>
+						{' '}
+						{t('cont')}
+					</li>
 					<li className='font-[400] text-[16px] cursor-pointer'>
 						<LanguageSelector />
 					</li>
 				</ul>
-				<Button />
+				<a href='#about'>
+					<Button />
+				</a>
 			</div>
 			{/* Mobile and Planshet version */}
 			<div className='container px-4 py-2 font-roboto lg:hidden block'>
@@ -46,10 +57,10 @@ const Navbar = () => {
 						transition={{ duration: 0.5, ease: 'easeInOut' }}
 						className='flex flex-col gap-4 mt-2 font-dmSans lg:hidden'
 					>
-						<li>About us</li>
-						<li>Careers</li>
-						<li>Resources</li>
-						<li>Login</li>
+						<li>{t('iztizomli')}</li>
+						<li>{t('shaxsiy_k')}</li>
+						<li>{t('konikma')}</li>
+						<li>{t('cont')}</li>
 						<LanguageSelector />
 					</motion.ul>
 				)}
