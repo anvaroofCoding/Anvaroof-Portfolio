@@ -36,7 +36,7 @@ const Contact = () => {
 						</a>
 						<hr className='w-full' />
 						<a
-							href='@https://t.me/anvaroof_web'
+							href='https://t.me/anvaroof_web'
 							target='_blank'
 							className='flex items-center gap-[10px] font-bold text-[15px] lg:text-[25px]'
 						>
