@@ -28,10 +28,12 @@ const Navbar = () => {
 							{t('konikma')}
 						</li>
 					</a>
-					<li className='font-[400] text-[16px] cursor-pointer'>
-						{' '}
-						{t('cont')}
-					</li>
+					<a href='#contact'>
+						<li className='font-[400] text-[16px] cursor-pointer'>
+							{' '}
+							{t('cont')}
+						</li>
+					</a>
 					<li className='font-[400] text-[16px] cursor-pointer'>
 						<LanguageSelector />
 					</li>

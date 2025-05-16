@@ -8,7 +8,10 @@ const Contact = () => {
 
 	return (
 		<div className='my-[50px]'>
-			<div className='container lg:h-[500px] h-auto  grid lg:grid-cols-2 grid-cols-1'>
+			<div
+				className='container lg:h-[500px] h-auto  grid lg:grid-cols-2 grid-cols-1 '
+				id='contact'
+			>
 				<div className=' w-full h-[100%] flex justify-center items-center'>
 					<h2 className='lg:text-[100px] text-[50px] font-dmSans'>
 						{t('me_contact')}
