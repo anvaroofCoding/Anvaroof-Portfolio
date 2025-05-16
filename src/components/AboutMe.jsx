@@ -19,7 +19,7 @@ const AboutMe = () => {
 				<div className=' h-[100%] w-[100$] relative'>
 					<div className='lg:w-[340px] animates duration-200 h-[200px] mt-5 h-border rounded-[12px] xl:absolute top-[100px] left-2  font-dmSans p-5'>
 						<h2>{t('me_about')}</h2>
-						<h2>{t('meme_date_about')}</h2>
+						<h2>{t('me_date')}</h2>
 						<h2>{t('me_Adres')}</h2>
 						<h2 className='font-bold'>{t('me_kurs')}</h2>
 					</div>
